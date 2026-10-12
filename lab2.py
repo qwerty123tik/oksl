@@ -337,7 +337,7 @@ class ComPortApp(QMainWindow):
         self.input_field.char_pressed.connect(self.send_data)
         layout.addWidget(self.input_field)
 
-        layout.addWidget(QLabel("Окно вывода (принятые сообщения):"))
+        layout.addWidget(QLabel("Окно вывода:"))
         self.output_field = QTextEdit()
         self.output_field.setReadOnly(True)
         layout.addWidget(self.output_field)
